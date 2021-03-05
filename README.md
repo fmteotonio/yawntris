@@ -4,6 +4,8 @@ Yawntris is a videogame done for the 2020 edition of #lowrezjam in a little unde
 
 All assets are original except the ambiance track used, which is under Creative Commons from FreeSound.org.
 
+The game is currently playable @ https://keeptrying.itch.io/yawntris
+
 # Controls:
 
 _Left, Right, Down_ - Move Falling Block
