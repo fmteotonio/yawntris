@@ -6,11 +6,15 @@ All assets are original except the ambiance track used, which is under Creative 
 
 # Controls:
 
-Left, Right, Down - Move Falling Block
-Up - Hard Drop (Block instantly goes down)
-Z - Rotate Block counter-clockwise
-X - Rotate Block clockwise
-Enter - Start Game
+_Left, Right, Down_ - Move Falling Block
+
+_Up_ - Hard Drop (Block instantly goes down)
+
+_Z_ - Rotate Block counter-clockwise
+
+_X_ - Rotate Block clockwise
+
+_Enter_ - Start Game
 
 
 ![diwrFT](https://user-images.githubusercontent.com/63672636/110176595-777ee400-7dfb-11eb-89b3-f365fdf0f8e3.png)
