@@ -1,10 +1,10 @@
 # Yawntris
 
-Yawntris is a videogame done for the 2020 edition of #lowrezjam in a little under two weeks, under the theme It's Not Really There, in a resolution of 64x64 pixels. It is a variant of the typical falling-block game in which after some time, the camera blinks, as if the player is feeling sleepy during his playing session, and an unexpected event occurs, making players change their course of action. Several events may occur such as pieces disappearing, weird pieces falling, and even parts of the playing field disappearing.
+Yawntris is a videogame done for the 2020 edition of #lowrezjam in a little under two weeks, under the theme **It's Not Really There**, in a resolution of **64x64 pixels**. It is a variant of the typical falling-block game in which after some time, the camera blinks, as if the player is feeling sleepy during his playing session, and an unexpected event occurs, making players change their course of action. Several events may occur such as pieces disappearing, weird pieces falling, and even parts of the playing field disappearing.
 
 All assets are original except the ambiance track used, which is under Creative Commons from FreeSound.org.
 
-Yawntris is currently playable @ https://keeptrying.itch.io/yawntris
+_Yawntris is currently playable @ https://keeptrying.itch.io/yawntris_
 
 # Controls:
 
