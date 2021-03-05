@@ -1,0 +1,39 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/MainScenes/Board.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Visuals/Midground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Visuals/Foreground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Visuals/Background.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Visuals/Next.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Visuals/BoardVisual.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Visuals/LevelDisplay.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Visuals/LinesDisplay.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Visuals/Blink.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Autoload/GameManager.gd" type="Script" id=10]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="MainCamera" type="Camera2D" parent="."]
+position = Vector2( 32, 32 )
+current = true
+
+[node name="Background" parent="." instance=ExtResource( 4 )]
+
+[node name="Midground" parent="." instance=ExtResource( 2 )]
+
+[node name="Foreground" parent="." instance=ExtResource( 3 )]
+
+[node name="Next" parent="." instance=ExtResource( 5 )]
+
+[node name="BoardVisual" parent="." instance=ExtResource( 6 )]
+
+[node name="Board" parent="." instance=ExtResource( 1 )]
+position = Vector2( 6, -1 )
+
+[node name="LevelDisplay" parent="." instance=ExtResource( 7 )]
+
+[node name="LinesDisplay" parent="." instance=ExtResource( 8 )]
+position = Vector2( 44, 44 )
+
+[node name="Blink" parent="." instance=ExtResource( 9 )]

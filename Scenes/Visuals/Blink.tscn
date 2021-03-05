@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Sprites/Blink/BlinkSpriteSheet.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Visuals/Blink.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 6 ) ],
+"loop": false,
+"name": "Close",
+"speed": 10.0
+}, {
+"frames": [ null, SubResource( 7 ) ],
+"loop": false,
+"name": "Warning",
+"speed": 10.0
+}, {
+"frames": [ null ],
+"loop": false,
+"name": "IsOpen",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ) ],
+"loop": false,
+"name": "IsClosed",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ), SubResource( 2 ), SubResource( 7 ), null ],
+"loop": false,
+"name": "Open",
+"speed": 10.0
+} ]
+
+[node name="Blink" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 32 )
+frames = SubResource( 11 )
+animation = "IsOpen"
+playing = true
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

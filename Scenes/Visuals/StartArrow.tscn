@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Sprites/TitleScreen/StartArrow.png" type="Texture" id=1]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), null ],
+"loop": true,
+"name": "default",
+"speed": 1.2
+} ]
+
+[node name="StartArrow" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 32 )
+frames = SubResource( 1 )
+playing = true

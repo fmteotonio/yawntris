@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Crickets.wav-3820993dd2afd339f9a054e27a6686f9.sample"
+
+[deps]
+
+source_file="res://Assets/Sound/Crickets.wav"
+dest_files=[ "res://.import/Crickets.wav-3820993dd2afd339f9a054e27a6686f9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

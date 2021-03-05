@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Sound/piecePlace.wav" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Sound/LoseGame.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sound/1Line.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Sound/3Lines.wav" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Sound/4Lines.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Sound/2Lines.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Sound/StartGame.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sound/Crickets.wav" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Sound/Rotate.wav" type="AudioStream" id=9]
+
+[node name="SfxPlayer" type="Node"]
+
+[node name="StartGameSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.097
+
+[node name="LoseGameSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.097
+
+[node name="PiecePlaceSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -10.097
+
+[node name="1LineSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.097
+
+[node name="2LinesSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.097
+
+[node name="3LinesSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.097
+
+[node name="4LinesSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.097
+
+[node name="RotateSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -10.097
+
+[node name="CricketSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )

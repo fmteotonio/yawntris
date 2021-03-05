@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Sprites/BackgroundComponents/Foreground.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/BackgroundComponents/ForegroundGreen.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/BackgroundComponents/ForegroundRed.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Red",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Green",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Blue",
+"speed": 5.0
+} ]
+
+[node name="Foreground" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 32 )
+frames = SubResource( 1 )
+animation = "Blue"
